@@ -8,7 +8,7 @@ This projects variety of topics like:
 This app has features similar to twitter:
 <p>-u can like a tweet</p>
 <p>-u can retweet</p
-<p>-u can post tweets with ot without imag</p>e
+<p>-u can post tweets with ot without image</p>
 <p>-u can post stories</p>
 <p>-can get notications if someone likes or follows u back</p>
 
