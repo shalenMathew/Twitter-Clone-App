@@ -12,7 +12,7 @@ This app has features similar to twitter:
 <p>-u can post stories</p>
 <p>-can get notications if someone likes or follows u back</p> 
 
-<img src="https://github.com/shalenMathew/Notes_App_JAVA/blob/master/github%20pics/Screenshot_20230915_144937.png" alt="main" width="270" height="500">
+<img src="https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/Screenshot_20231103_111054.png" alt="main" width="270" height="500">
 <img src="https://github.com/shalenMathew/Notes_App_JAVA/blob/master/github%20pics/Screenshot_20230915_144954.png" alt="starr" width="270" height="500">
 <img src="https://github.com/shalenMathew/Notes_App_JAVA/blob/master/github%20pics/Screenshot_20230915_144950.png" alt="starr" width="270" height="500">
 <img src="https://github.com/shalenMathew/Notes_App_JAVA/blob/master/github%20pics/Screenshot_20230915_145001.png" alt="starr" width="270" height="500">
