@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+android:id="@+id/Home"
+android:title="Home"
+    app:cnb_backgroundColor="@color/black"
+    android:icon="@drawable/icon_home_outline"
+    app:cnb_textColor = "@color/white"
+    app:cnb_iconColor="@color/white"
+
+    />
+
+    <item
+        android:id="@+id/Notification"
+        android:title="Notification"
+        app:cnb_backgroundColor="@color/black"
+        android:icon="@drawable/icon_notifi_outline"
+        app:cnb_textColor = "@color/white"
+        app:cnb_iconColor="@color/white"
+        />
+
+    <item
+        android:id="@+id/Reels"
+        android:title="Reels"
+        app:cnb_backgroundColor="@color/black"
+        android:icon="@drawable/icon_reel_outline"
+        app:cnb_textColor = "@color/white"
+        app:cnb_iconColor="@color/white"
+        />
+
+    <item
+        android:id="@+id/Connect"
+        android:title="Connect"
+        app:cnb_backgroundColor="@color/black"
+        android:icon="@drawable/icon_connect_outline"
+        app:cnb_textColor = "@color/white"
+        app:cnb_iconColor="@color/white"
+        />
+
+    <item
+        android:id="@+id/Profile"
+        android:title="Profile"
+        app:cnb_backgroundColor="@color/black"
+        android:icon="@drawable/icon_profile_outline"
+        app:cnb_textColor = "@color/white"
+        app:cnb_iconColor="@color/white"
+        />
+
+</menu>

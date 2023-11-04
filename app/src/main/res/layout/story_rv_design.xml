@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/story_rv_design_dp"
+        android:layout_width="@dimen/_55mdp"
+        android:layout_height="@dimen/_55mdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="12dp"
+        app:portion_spacing="6dp"
+        app:portion_width="3dp"
+        app:portions_count="10"
+        />
+
+
+    <com.devlomi.circularstatusview.CircularStatusView
+        android:id="@+id/story_rv_design_status"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/story_rv_design_dp"
+        app:layout_constraintEnd_toEndOf="@+id/story_rv_design_dp"
+        app:layout_constraintStart_toStartOf="@+id/story_rv_design_dp"
+        app:layout_constraintTop_toTopOf="@+id/story_rv_design_dp"
+        app:portion_color="@color/black"
+        app:portion_spacing="6dp"
+        app:portion_width="3dp"
+        app:portions_count="10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
