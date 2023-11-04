@@ -1,9 +1,9 @@
 Thoughts App is A twiiter clone 
 
 This projects variety of topics like:
--Firebase
--UI
--ViewBinding
+Firebase
+UI
+ViewBinding
 
 This app has features similar to twitter:
 -u can like a tweet
