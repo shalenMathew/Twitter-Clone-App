@@ -1,7 +1,7 @@
 Thoughts App is A twiiter clone 
 
 This projects variety of topics like:
-Firebase /n
+<p>Firebase \n </p>
 UI
 ViewBinding
 
