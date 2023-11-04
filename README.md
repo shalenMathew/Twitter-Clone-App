@@ -12,6 +12,7 @@ This app has features similar to twitter:
 <p>-u can post stories</p>
 <p>-can get notications if someone likes or follows u back</p> 
 
+<img src="https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/0.png" alt="main" width="270" height="500">
 <img src="https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/Screenshot_20231103_111054.png" alt="main" width="270" height="500">
 <img src="https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/2.png" alt="starr" width="270" height="500">
 <img src="https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/Notif.png" alt="starr" width="270" height="500">
