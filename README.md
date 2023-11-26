@@ -1,4 +1,4 @@
-Thoughts App is an twiiter clone <br><br>
+Thoughts App is an twitter clone <br><br>
 
 This projects folllows variety of topics like:<br><br>
 1. Firebase <br>
