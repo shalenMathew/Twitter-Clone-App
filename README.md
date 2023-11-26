@@ -1,3 +1,5 @@
+# Thoughts(twitter clone)
+
 Thoughts App is an twitter clone <br><br>
 
 This projects folllows variety of topics like:<br><br>
