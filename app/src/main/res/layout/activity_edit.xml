@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditActivity">
+    tools:context=".EditActivity"
+    android:background="@color/white"
+    >
 
     <ImageView
         android:id="@+id/activity_edit_profile_dp"
@@ -28,6 +30,7 @@
         app:srcCompat="@drawable/add_img" />
 
     <EditText
+        android:textColor="@color/black"
         android:id="@+id/activity_edit_profile_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,6 +47,7 @@
         />
 
     <EditText
+        android:textColor="@color/black"
         android:id="@+id/activity_edit_profile_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

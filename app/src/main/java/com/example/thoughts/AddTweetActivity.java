@@ -2,12 +2,14 @@ package com.example.thoughts;
 
 import static java.security.AccessController.getContext;
 
+import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -36,7 +38,7 @@ public class AddTweetActivity extends AppCompatActivity {
 
     Uri imgUri;
 
-    ActivityResultLauncher<String> gallery;
+    ActivityResultLauncher<Intent> gallery;
 
     String imgUrl;
 
@@ -76,7 +78,6 @@ public class AddTweetActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(!TextUtils.isEmpty(binding.activityAddThoughtEt.getText())){
-
                 ThoughtModel  thoughtModel = new ThoughtModel();
 
                     if(imgUrl!=null) {
@@ -129,41 +130,50 @@ public class AddTweetActivity extends AppCompatActivity {
         binding.activityAddThoughtGallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gallery.launch("image/*");
+               Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+                    intent.addCategory(Intent.CATEGORY_OPENABLE);
+                intent.setType("image/*");
+                gallery.launch(intent);
             }
         });
 
-        gallery=registerForActivityResult(new ActivityResultContracts.GetContent(), new ActivityResultCallback<Uri>() {
+        gallery=registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
             @Override
-            public void onActivityResult(Uri result) {
-                binding.activityAddThoughtImg.setImageURI(result);
-                imgUri=result;
+            public void onActivityResult(ActivityResult result) {
 
-                StorageReference storageReference = FirebaseStorage.getInstance().getReference()
-                        .child("Post")
-                        .child(FirebaseAuth.getInstance().getUid())
-                        .child(new Date().getTime()+"");
+                if (result.getResultCode()==RESULT_OK){
+                    if (result.getData() != null && result.getData().getData() != null) {
 
-                storageReference
-                        .putFile(result)
-                        .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                            @Override
-                            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        Uri uri = result.getData().getData();
+                        getContentResolver().takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                        binding.activityAddThoughtImg.setImageURI(uri);
+                        imgUri = uri;
 
-                                storageReference.getDownloadUrl()
-                                        .addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        Toast.makeText(AddTweetActivity.this, "Image uploading to server...Don't hit Post yet", Toast.LENGTH_SHORT).show();
+
+                        StorageReference storageReference = FirebaseStorage.getInstance().getReference()
+                                .child("Post")
+                                .child(FirebaseAuth.getInstance().getUid())
+                                .child(new Date().getTime()+"");
+
+                        storageReference.putFile(result.getData().getData())
+                                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                     @Override
-                                    public void onSuccess(Uri uri) {
-                                        imgUrl = uri.toString();
+                                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+
+                                        storageReference.getDownloadUrl()
+                                                .addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                                    @Override
+                                                    public void onSuccess(Uri uri) {
+                                                        imgUrl = uri.toString();
+                                                        Toast.makeText(AddTweetActivity.this, "Ready to go...", Toast.LENGTH_SHORT).show();
+                                                    }
+                                                });
                                     }
                                 });
-                            }
-                        });
-
-
+                    }
+                }
             }
         });
-
-
     }
 }

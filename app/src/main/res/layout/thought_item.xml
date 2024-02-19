@@ -75,7 +75,9 @@
                 android:layout_marginEnd="@dimen/_70mdp"
                 app:layout_constraintEnd_toEndOf="@+id/tweet_item_thought"
                 app:layout_constraintTop_toBottomOf="@+id/tweet_item_thought"
-                app:srcCompat="@drawable/icon_heart_grey" />
+                app:srcCompat="@drawable/icon_heart_grey"
+                android:tint="@color/black"
+                />
 
             <ImageView
                 android:id="@+id/tweet_item_comment"
@@ -85,7 +87,9 @@
                 app:layout_constraintBottom_toBottomOf="@+id/tweet_item_like"
                 app:layout_constraintEnd_toStartOf="@+id/tweet_item_like"
                 app:layout_constraintTop_toTopOf="@+id/tweet_item_like"
-                app:srcCompat="@drawable/icon_chat_grey" />
+                app:srcCompat="@drawable/icon_chat_grey"
+                android:tint="@color/black"
+                />
 
             <ImageView
                 android:id="@+id/tweet_item_retweet"
@@ -96,10 +100,11 @@
                 app:layout_constraintEnd_toStartOf="@+id/tweet_item_comment"
                 app:layout_constraintTop_toTopOf="@+id/tweet_item_comment"
                 app:layout_constraintVertical_bias="1.0"
-
+                android:tint="@color/black"
                 app:srcCompat="@drawable/icon_retweet_grey" />
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/tweet_item_like_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -112,6 +117,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tweet_item_like" />
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/tweet_item_comment_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,6 +129,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tweet_item_comment" />
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/tweet_item_retweet_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

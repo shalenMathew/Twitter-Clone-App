@@ -40,6 +40,7 @@
         app:layout_constraintTop_toTopOf="@+id/activity_add_thought_dp" />
 
     <EditText
+        android:textColor="@color/black"
         android:id="@+id/activity_add_thought_et"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -52,7 +53,7 @@
         android:gravity="top"
         android:hint="write ur thoughts..."
         android:inputType="textMultiLine"
-
+        android:textColorHint="#8A404040"
         app:layout_constraintBottom_toTopOf="@+id/activity_add_thought_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
