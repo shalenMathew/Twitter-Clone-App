@@ -14,6 +14,10 @@ This app has features similar to twitter:<br><br>
 4. u can post stories<br>
 5. can get notications if someone likes or follows u back<br><br>
 
+Login Details: <br>
+email-sample@gmail.com
+password-123456
+
 <img src="https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/0.png" alt="main" width="275" height="500">
 <img src="https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/Screenshot_20231103_111054.png" alt="main" width="275" height="500">
 <img src="https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/2.png" alt="starr" width="275" height="500">
