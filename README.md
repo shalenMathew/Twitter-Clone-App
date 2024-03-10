@@ -15,7 +15,7 @@ This app has features similar to twitter:<br><br>
 5. can get notications if someone likes or follows u back<br><br>
 
 Login Details: <br>
-email-sample@gmail.com
+email-sample@gmail.com<br>
 password-123456
 
 <img src="https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/0.png" alt="main" width="275" height="500">
