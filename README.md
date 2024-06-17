@@ -4,6 +4,11 @@
 
 **Thoughts is a twitter clone that shares same functionalty as twitter build using java and Firebase as backend**
 
+Download the app from here 
+
+![Static Badge](https://img.shields.io/badge/Thoughts-APK-red?logo=android)
+
+
 ## Features ⚙️
 - u can like a tweet
 - u can retweet
