@@ -9,9 +9,9 @@ Thoughts App is an twitter clone <br><br>
 ## Features ⚙️
 - u can like a tweet
 - u can retweet
-- u can post tweets with ot without image
+- u can post tweets with or without image
 - u can post stories
-- can get notications if someone likes or follows u back
+- can get track of who follows u and likes in notification section
 
 ## Login
 email-sample@gmail.com<br>
