@@ -2,6 +2,8 @@
 
 Thoughts App is an twitter clone <br><br>
 
+![App Screenshot](https://github.com/shalenMathew/Personal-Journal-App/blob/master/gallery/personalJournal.png)
+
 This projects folllows variety of topics like:<br><br>
 1. Firebase <br>
 2. UI<br>
