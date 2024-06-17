@@ -12,7 +12,7 @@
 - can get track of who follows u and likes in notification section
 
 ## Login
-email-sample@gmail.com
+email - sample@gmail.com
 password-123456
 
 ## Contact 📧
