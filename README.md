@@ -1,7 +1,5 @@
 # Thoughts(twitter clone)
 
-Thoughts App is an twitter clone <br><br>
-
 ![App Screenshot](https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/banner.png)
 
 **Thoughts is a twitter clone that shares same functionalty as twitter build using java and Firebase as backend**
