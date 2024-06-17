@@ -6,7 +6,7 @@
 
 Download the app from here 
 
-![Static Badge](https://img.shields.io/badge/Thoughts-APK-red?logo=android)
+[![Static Badge](https://img.shields.io/badge/Thoughts-APK-red?logo=android)](https://github.com/shalenMathew/Twitter-Clone-App/releases/tag/v1.0)
 
 
 ## Features ⚙️
