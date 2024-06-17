@@ -12,9 +12,15 @@
 - can get track of who follows u and likes in notification section
 
 ## Login
-email-sample@gmail.com<br>
+email-sample@gmail.com
 password-123456
 
+## Contact 📧
+Connect me using shalenmj@gmail.com
+
+Twitter - https://twitter.com/shalenMathew
+
+Linkedln - https://www.linkedin.com/in/shalen-mathew-3b566921b/
 
 
 
