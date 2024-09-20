@@ -1,4 +1,4 @@
-# Thoughts(twitter clone)
+# Thoughts App (A Twitter clone)
 
 ![App Screenshot](https://github.com/shalenMathew/Twitter-Clone-App/blob/master/Pics/banner.png)
 
