@@ -64,9 +64,11 @@ public class ProfileFragment extends Fragment {
 
         ThoughtAdapter thoughtAdapter = new ThoughtAdapter(getContext(),list);
 
-        FirebaseDatabase.getInstance().getReference()
-                        .child("Post")
-                                .addValueEventListener(new ValueEventListener() {
+        FirebaseDatabase
+                .getInstance()
+                .getReference()
+                .child("Post")
+                .addValueEventListener(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 

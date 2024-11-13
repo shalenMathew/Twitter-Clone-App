@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(binding.mainToolbar);
         MainActivity.this.setTitle("Profile");
 
-
         binding.mainNavBottom.setItemSelected(R.id.Home,true);
         binding.mainToolbar.setVisibility(View.GONE);
         getSupportFragmentManager().beginTransaction().replace(R.id.main_frame,new HomeFragment()).commit();
